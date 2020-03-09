@@ -1,19 +1,18 @@
 @extends ('layouts.app')
 @section ('content')
 
-<h1 class="page-header">ToDo一覧</h1>
+<h1 class="page-header">{{ Auth::user()->name }}のToDo一覧</h1>
 <p class="text-right">
   <a class="btn btn-success" href="/todo/create">新規作成</a>
 </p>
 <table class="table">
   <thead class="thead-light">
     <tr>
-      <th>ID</th>
       <th>やること</th>
       <th>作成日時</th>
       <th>更新日時</th>
-      <th>編集</th>
-      <th>削除</th>
+      <th></th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
